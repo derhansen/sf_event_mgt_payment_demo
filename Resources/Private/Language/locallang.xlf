@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2021-10-02T07:58:00Z" product-name="sf_event_mgt_payment_demo">
+		<header/>
+		<body>
+			<trans-unit id="payment.title.payment_demo">
+				<source>Demo Provider</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

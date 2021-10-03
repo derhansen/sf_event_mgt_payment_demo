@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<h1>Redirect Template</h1>
+
+<p>
+    Use this template to redirect to the payment provider (e.g. using a for with POST data or by a
+    JavaScript redirect. Links below are for testing purposes and must not be exposed to public.
+</p>
+<p>
+    <strong>Registration UID:</strong> {data.registration.uid}
+</p>
+<p>
+    <strong>Registration name:</strong> {data.registration.firstname} {data.registration.lastname}
+</p>
+
+<p>
+    <strong>Success URL:</strong> <a href="{data.successUrl}">{data.successUrl}</a>
+</p>
+<p>
+    <strong>Failure URL:</strong> <a href="{data.failureUrl}">{data.failureUrl}</a>
+</p>
+<p>
+    <strong>Cancel URL:</strong> <a href="{data.cancelUrl}">{data.cancelUrl}</a>
+</p>
+<p>
+    <strong>Notify URL:</strong> <a href="{data.notifyUrl}">{data.notifyUrl}</a>
+</p>
+
+</html>

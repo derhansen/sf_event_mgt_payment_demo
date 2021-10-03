@@ -1,0 +1,34 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Derhansen\SfEventMgtPaymentDemo\:
+    resource: '../Classes/*'
+
+  Derhansen\SfEventMgtPaymentDemo\EventListener\PaymentInitialize:
+    tags:
+      - name: event.listener
+        identifier: 'processPaymentInitializeEvent'
+        event: DERHANSEN\SfEventMgt\Event\ProcessPaymentInitializeEvent
+  Derhansen\SfEventMgtPaymentDemo\EventListener\PaymentSuccess:
+    tags:
+      - name: event.listener
+        identifier: 'processPaymentSuccessEvent'
+        event: DERHANSEN\SfEventMgt\Event\ProcessPaymentSuccessEvent
+  Derhansen\SfEventMgtPaymentDemo\EventListener\PaymentFailure:
+    tags:
+      - name: event.listener
+        identifier: 'processPaymentFailureEvent'
+        event: DERHANSEN\SfEventMgt\Event\ProcessPaymentFailureEvent
+  Derhansen\SfEventMgtPaymentDemo\EventListener\PaymentCancel:
+    tags:
+      - name: event.listener
+        identifier: 'processPaymentCancelEvent'
+        event: DERHANSEN\SfEventMgt\Event\ProcessPaymentCancelEvent
+  Derhansen\SfEventMgtPaymentDemo\EventListener\PaymentNotify:
+    tags:
+      - name: event.listener
+        identifier: 'processPaymentNotifyEvent'
+        event: DERHANSEN\SfEventMgt\Event\ProcessPaymentNotifyEvent

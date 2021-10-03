@@ -1,0 +1,32 @@
+{
+  "name": "derhansen/sf_event_mgt_payment_demo",
+  "type": "typo3-cms-extension",
+  "description": "Demo extension for payment integration in ext:sf_event_mgt",
+  "homepage": "https://github.com/derhansen/sf_event_mgt_payment_demo",
+  "support": {
+    "issues": "https://github.com/derhansen/sf_event_mgt_payment_demo/issues"
+  },
+  "authors": [
+    {
+      "name": "Torben Hansen",
+      "email": "derhansen@gmail.com",
+      "homepage": "https://www.derhansen.com",
+      "role": "Developer"
+    }
+  ],
+  "keywords": ["TYPO3 CMS", "event management", "event registration", "payment"],
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "~11.4.0 || dev-master"
+  },
+  "replace": {
+    "typo3-ter/sf-event-mgt-payment-demo": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "Derhansen\\SfEventMgtPaymentDemo\\": "Classes"
+    }
+  }
+}
