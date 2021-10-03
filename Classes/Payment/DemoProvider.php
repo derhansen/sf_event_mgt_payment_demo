@@ -6,9 +6,9 @@ use DERHANSEN\SfEventMgt\Payment\AbstractPayment;
 
 class DemoProvider extends AbstractPayment
 {
-    protected $enableRedirect = true;
-    protected $enableSuccessLink = true;
-    protected $enableFailureLink = true;
-    protected $enableCancelLink = true;
-    protected $enableNotifyLink = true;
+    protected bool $enableRedirect = true;
+    protected bool $enableSuccessLink = true;
+    protected bool $enableFailureLink = true;
+    protected bool $enableCancelLink = true;
+    protected bool $enableNotifyLink = true;
 }
