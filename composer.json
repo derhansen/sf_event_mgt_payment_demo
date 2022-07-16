@@ -19,7 +19,8 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "~11.4.0 || dev-master"
+    "typo3/cms-core": "^11.5",
+    "derhansen/sf_event_mgt": "^6.0"
   },
   "replace": {
     "typo3-ter/sf-event-mgt-payment-demo": "self.version"
