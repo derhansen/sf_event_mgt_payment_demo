@@ -19,7 +19,7 @@ class PaymentSuccess
         $variables = [];
         $variables['html'] = $view->render();
 
-        // Implement custom logic here (e.g. save transation ID, ...)
+        // Implement custom logic here (e.g. save transaction ID, ...)
 
         $processPaymentSuccessEvent->getRegistration()->setPaid(true);
         $processPaymentSuccessEvent->setUpdateRegistration(true);

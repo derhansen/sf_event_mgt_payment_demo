@@ -19,8 +19,8 @@
     "GPL-2.0-or-later"
   ],
   "require": {
-    "typo3/cms-core": "^11.5",
-    "derhansen/sf_event_mgt": "^6.0"
+    "typo3/cms-core": "^12.4",
+    "derhansen/sf_event_mgt": "^7.0"
   },
   "replace": {
     "typo3-ter/sf-event-mgt-payment-demo": "self.version"
@@ -28,6 +28,11 @@
   "autoload": {
     "psr-4": {
       "Derhansen\\SfEventMgtPaymentDemo\\": "Classes"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "sf_event_mgt_payment_demo"
     }
   }
 }
